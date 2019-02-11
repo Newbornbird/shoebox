@@ -5,16 +5,14 @@ import styles from './Status.module.scss'; // Import css modules stylesheet as s
 
 class Status extends Component {
   render() {
-    const { active } = this.props;
+    const { active, customClass } = this.props;
 
     const className = classnames(styles.status, {
       [styles.active]: active,
+      [customClass]: !!customClass,
     });
 
-    return (
-      <div active={active} className={className} >
-      </div>
-    );
+    return <div active={active} className={className} />;
   }
 }
 
