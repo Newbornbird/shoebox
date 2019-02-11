@@ -173,3 +173,35 @@
     background-color: rgba(54, 63, 85, 0.15);
   }
 }
+
+.btnEdit{
+  width: 14px;
+  height: 14px;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.btnDelete{
+  width: 11px;
+  height: 14px;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.buttonClose{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  background: none;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+}

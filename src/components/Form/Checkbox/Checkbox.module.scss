@@ -1,0 +1,34 @@
+
+.wrapperCheckbox {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 10px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 14px;
+  color: #363f55;
+}
+
+input[type='checkbox'] {
+  display: none;
+}
+
+.checkbox {
+  width: 20px;
+  height: 20px;
+  background: #f8f8f8;
+  box-shadow: inset 1px 1px 2px rgba(79, 79, 79, 0.1);
+  border-radius: 5px;
+  margin-right: 7px;
+}
+
+input[type='checkbox']:checked + .checkbox {
+  background-color: #29cc97;
+  background-repeat: no-repeat;
+  background-image: url('../../../assets/images/icon_check.svg');
+  background-position: center;
+  background-size: 50%;
+}
