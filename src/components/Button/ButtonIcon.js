@@ -5,29 +5,28 @@ import IconSent from '../../assets/images/icon_sent_email.svg';
 import IconCall from '../../assets/images/icon_call_answer.svg';
 import IconDrop from '../../assets/images/icon_drop_back.svg';
 import IconFilter from '../../assets/images/icon_filters.svg';
+import IconMenu from '../../assets/images/icon_menu.svg';
 
 class ButtonIcon extends Component {
   render() {
-    const { disabled,
-       text,
-       btnSent,
-       btnDrop,
-       btnFilter,
-       type } = this.props;
+    const { style, disabled, text, btnSent, btnDrop, btnFilter, type } = this.props;
     let icon = null;
     switch (type) {
       case 'sent':
-       (icon = IconSent );
-       break;
-       case 'call':
-       (icon = IconCall );
-       break;
-       case 'drop':
-       (icon = IconDrop );
-       break;
-       case 'filter':
-       (icon = IconFilter );
-       break;
+        icon = IconSent;
+        break;
+      case 'call':
+        icon = IconCall;
+        break;
+      case 'drop':
+        icon = IconDrop;
+        break;
+      case 'filter':
+        icon = IconFilter;
+        break;
+      case 'menu':
+        icon = IconMenu;
+        break;
     }
     const className = classnames(styles.btn, styles.default, {
       [styles.disabled]: disabled,
@@ -36,7 +35,7 @@ class ButtonIcon extends Component {
       [styles.btnFilter]: btnFilter,
     });
     return (
-      <button disabled={disabled} className={className}>
+      <button disabled={disabled} className={className} style={style}>
         <span>
           <img src={icon} />
         </span>

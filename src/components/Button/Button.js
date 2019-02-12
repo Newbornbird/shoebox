@@ -5,6 +5,7 @@ import styles from './Button.module.scss'; // Import css modules stylesheet as s
 class Button extends Component {
   render() {
     const {
+      style,
       disabled,
       text,
       transparentBorder,
@@ -12,6 +13,7 @@ class Button extends Component {
       transparentShadow,
       transparentShadowDisabled,
       btnSent,
+      full,
     } = this.props;
 
     const className = classnames(styles.btn, styles.default, {
@@ -21,9 +23,10 @@ class Button extends Component {
       [styles.transparentShadow]: transparentShadow,
       [styles.transparentShadowDisabled]: transparentShadowDisabled,
       [styles.btnSent]: btnSent,
+      [styles.full]: full,
     });
     return (
-      <button disabled={disabled} className={className}>
+      <button disabled={disabled} className={className} style={style}>
         <span>{text}</span>
       </button>
     );
