@@ -3,10 +3,10 @@ import styles from './Input.module.scss';
 
 class Input extends Component {
   render() {
-    const { labelText, placeholder } = this.props;
+    const { style, labelText, placeholder } = this.props;
 
     return (
-      <div className={styles.inputRow}>
+      <div className={styles.inputWrapper} style={style}>
         <label>
           <span className={styles.labelText}>{labelText}</span>
           <input className={styles.input} placeholder={placeholder} />
