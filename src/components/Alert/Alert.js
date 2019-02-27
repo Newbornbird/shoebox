@@ -5,10 +5,11 @@ import IconBell from '../../assets/images/icon_bell.svg';
 
 class ButtonEdit extends Component {
   render() {
+    const { active } = this.props;
     return (
       <div className={styles.alert}>
         <img src={IconBell} />
-        <Status customClass={styles.statusAlert} />
+        <Status active={active} customClass={styles.statusAlert} />
       </div>
     );
   }
