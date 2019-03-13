@@ -4,14 +4,19 @@ import Photo from '../../assets/images/icon_avatar.png';
 
 class AvatarIcon extends Component {
   render() {
-    const { width, height } = this.props;
+    const { width, height, linkUser } = this.props;
 
     return (
-      <div sclassName={styles.avatarIcon}>
+      <a sclassName={styles.avatarIcon} href={linkUser}>
         <img width={width} height={height} src={Photo} alt="" />
-      </div>
+      </a>
     );
   }
 }
+
+AvatarIcon.defaultProps = {
+  width: 30,
+  height: 30,
+};
 
 export default AvatarIcon;
