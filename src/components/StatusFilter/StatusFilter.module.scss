@@ -1,0 +1,46 @@
+.statusFilter {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: normal;
+  text-align: center;
+  color: #363F55;
+  padding: 5px 14px;
+  border-radius: 20px;
+}
+
+.deemed {
+  background-color: #DEFCF5;
+}
+
+.customerComments{
+  background-color: #FEF3D5;
+}
+
+.declined{
+  background-color: #FFE3E2;
+}
+
+.draft {
+  background-color: #F5F6FA;
+}
+
+.open {
+  background-color: #E5EDFF;
+}
+
+.signed {
+  background-color: #FFFCF2;
+}
+
+.opened {
+  background-color: #E5F7FF;
+}
+
+.sent {
+  background-color: #F1DEFC;
+}
+
+.accepted {
+  background-color: #F2FCDE;
+}

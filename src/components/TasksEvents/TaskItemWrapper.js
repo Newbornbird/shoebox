@@ -5,7 +5,7 @@ class TaskItemWrapper extends Component {
   render() {
     const { children } = this.props;
 
-    return <li className={styles.TaskItemWrapper}>{children}</li>;
+    return <li className={styles.taskItemWrapper}>{children}</li>;
   }
 }
 

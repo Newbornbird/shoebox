@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import styles from './Avatar.module.scss';
 
 class Position extends Component {
@@ -8,5 +9,9 @@ class Position extends Component {
     return <p className={styles.avatarPosition}>{text}</p>;
   }
 }
+
+Position.propTypes = {
+  text: PropTypes.string,
+};
 
 export default Position;

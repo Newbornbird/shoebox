@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import styles from './Input.module.scss';
 
 class Input extends Component {
@@ -15,5 +16,11 @@ class Input extends Component {
     );
   }
 }
+
+Input.propTypes = {
+  style: PropTypes.object,
+  labelText: PropTypes.string,
+  placeholder: PropTypes.string,
+};
 
 export default Input;

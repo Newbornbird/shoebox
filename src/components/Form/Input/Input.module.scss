@@ -23,13 +23,16 @@
   font-size: 14px;
   padding: 7px 12px;
   color: #363F55;
-  border: none;
+  border: 1px solid transparent;
   outline: none;
+  &:active{
+    border: 1px solid #4C84FF;
+  }
+  &:focus{
+    border: 1px solid #4C84FF;
+  }
 }
 
-.input:active{
-  border: 1px solid #4C84FF;
-}
 
 ::-webkit-input-placeholder {color: #BFC5D1;}
 ::-moz-placeholder          {color: #BFC5D1;}/* Firefox 19+ */

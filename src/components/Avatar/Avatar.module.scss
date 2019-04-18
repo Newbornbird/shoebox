@@ -1,22 +1,20 @@
 @import '../../styles/global.scss';
 
-.avatar{
+.avatar {
   display: flex;
   align-items: center;
 }
 
-.avatarIcon{
+.avatarIcon {
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  margin-right: 14px;
   overflow: hidden;
   cursor: pointer;
-  border: 5px solid green;
 }
 
-.avatarName{
+.avatarName {
   font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
@@ -25,7 +23,7 @@
   color: #363F55;
 }
 
-.avatarPosition{
+.avatarPosition {
   font-family: Montserrat;
   font-style: normal;
   font-weight: normal;

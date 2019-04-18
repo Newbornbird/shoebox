@@ -1,5 +1,5 @@
 
-.FilterTasks{
+.filterTasks{
   margin-top: 15px;
   display: flex;
    button{
@@ -7,27 +7,27 @@
    }
 }
 
-.TaskList{
+.taskList{
   padding-left: 0;
   list-style-type: none;
   margin-top: 10px;
   margin-bottom: 0;
 }
 
-.TaskItemWrapper{
+.taskItemWrapper{
   padding: 13px 17px 25px;
   background-color: #ffffff;
   margin-bottom: 15px;
   box-shadow: 1px 1px 3px #E5E9F3;
 }
 
-.ItemHeader{
+.itemHeader{
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.ItemTitle{
+.itemTitle{
   font-size: 14px;
   color: #363F55;
   margin-top: 0;
@@ -35,7 +35,7 @@
   font-weight: bold;
 }
 
-.ItemHeaderControl{
+.itemHeaderControl{
   display: flex;
   align-items: center;
     button{
@@ -43,22 +43,27 @@
     }
 }
 
-.ItemText{
+.itemText{
   font-size: 14px;
   font-weight: normal;
   color: #363F55;
   margin-top: 0;
   margin-bottom: 7px;
+  overflow: hidden;
+  width: 95%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
-.ItemDate{
+.itemDate{
   font-size: 12px;
   color: #C6CBD6;
   margin: 0;
   margin-bottom: 5px;
 }
 
-.ItemInfo{
+.itemInfo{
   font-size: 12px;
   display: flex;
   justify-content: space-between;
@@ -68,7 +73,7 @@
   margin-bottom: 11px;
 }
 
-.EventItemUsers{
+.eventItemUsers{
   display: flex;
   align-items: center;
    a{
@@ -81,4 +86,11 @@
       z-index: 10;
      }
    }
+}
+
+.eventInfo {
+  width: 300px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }

@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import Status from '../Status/Status';
 import styles from './Alert.module.scss'; // Import css modules stylesheet as styles
 import IconBell from '../../assets/images/icon_bell.svg';
 
-class ButtonEdit extends Component {
+class Alert extends Component {
   render() {
     const { active } = this.props;
     return (
@@ -15,4 +16,8 @@ class ButtonEdit extends Component {
   }
 }
 
-export default ButtonEdit;
+Alert.propTypes = {
+  active: PropTypes.bool,
+};
+
+export default Alert;

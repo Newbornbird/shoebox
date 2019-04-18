@@ -11,9 +11,8 @@ import Line from '../../Line/Line';
 import styles from './FormNewDeal.module.scss'; // Import css modules stylesheet as styles
 
 class FormNewDeal extends Component {
+  // eslint-disable-next-line class-methods-use-this
   render() {
-    const { text } = this.props;
-
     return (
       <form className={styles.formNewDeal}>
         <HeaderForm text="Add New Deal" />

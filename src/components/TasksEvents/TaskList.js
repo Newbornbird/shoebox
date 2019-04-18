@@ -6,7 +6,7 @@ import EventItem from './EventItem';
 class TaskList extends Component {
   render() {
     return (
-      <ul className={styles.TaskList}>
+      <ul className={styles.taskList}>
         <TaskItem
           title="Task Name"
           text="There are two main interpretations of the concept of text"
@@ -27,7 +27,7 @@ class TaskList extends Component {
           title="Event Name"
           date="on Friday at 13:00 PM"
           text="There are two main interpretations of the concept of text."
-          info="Farland Avenue San Antonio, TX 78258"
+          info="Farland Avenue San Antonio, TX 78258 Farland Avenue San Antonio, TX 78258"
         />
       </ul>
     );

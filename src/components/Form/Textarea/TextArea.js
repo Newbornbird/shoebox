@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import styles from './Textarea.module.scss';
 
 class Textarea extends Component {
@@ -15,5 +16,11 @@ class Textarea extends Component {
     );
   }
 }
+
+Textarea.propTypes = {
+  style: PropTypes.object,
+  labelText: PropTypes.string,
+  placeholder: PropTypes.string,
+};
 
 export default Textarea;

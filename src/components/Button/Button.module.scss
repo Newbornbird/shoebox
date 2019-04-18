@@ -5,7 +5,7 @@
   position: relative;
   border-radius: 5px;
   font-family: 'Montserrat', arial;
-  padding: 8px 24px 9px 24px;
+  padding: 8px 20px 9px 20px;
   font-style: normal;
   font-weight: bold;
   line-height: normal;
@@ -20,18 +20,21 @@
 .default {
   background-color: $cornflower;
   color: #ffffff;
+
   &:hover {
     box-shadow: 0px 4px 4px rgba(76, 132, 255, 0.4);
   }
+
   &:active {
     background-color: #376fec;
   }
 }
 
-.btnArrow{
+.btnArrow {
   position: relative;
   z-index: 5;
-  padding-right: 30px;
+  padding-right: 45px;
+  margin-right: 15px;
 }
 
 .btnArrow::after {
@@ -45,7 +48,7 @@
   background: $cornflower;
   transform: translateY(-50%) rotate(45deg);
   z-index: 3;
-  transition: 0;
+  transition: 0.3s ease;
 }
 
 .btnArrow:active::after {
@@ -62,12 +65,15 @@
 
 .disabled {
   background-color: #8f96a7;
+
   &:hover {
     box-shadow: none;
   }
+
   &:active {
     background-color: #8f96a7;
   }
+
   span {
     opacity: 0.5;
   }
@@ -78,6 +84,7 @@
   background-color: #ffffff;
   color: $cornflower;
   border: 1px solid $cornflower;
+
   &:active {
     background-color: #f5f6fa;
   }
@@ -93,10 +100,13 @@
   background-color: #ffffff;
   color: #363f55;
   border: none;
+  white-space: nowrap;
   box-shadow: 1px 1px 3px #e5e9f3;
+
   &:hover {
     box-shadow: 0px -13px 0px -8px #4c84ff inset;
   }
+
   &:active {
     background: #f5f6fa;
     box-shadow: inset 0px 1px 2px rgba(48, 48, 48, 0.1);
@@ -106,9 +116,11 @@
 .transparentShadowDisabled {
   color: rgba(54, 63, 85, 0.5);
   border: 1px solid rgba(76, 132, 255, 0.5);
+
   &:hover {
     box-shadow: none;
   }
+
   &:active {
     background-color: #ffffff;
   }
@@ -121,6 +133,7 @@
   width: 35px;
   height: 32px;
   padding: 0;
+
   img {
     display: block;
   }
@@ -131,6 +144,7 @@
   align-items: center;
   justify-content: center;
   width: 100%;
+
   img {
     margin-right: 8px;
   }
@@ -140,6 +154,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
   img {
     margin-right: 8px;
   }
@@ -156,12 +171,14 @@
   border-radius: 5px;
   outline: none;
   border: none;
+
   &:active {
     background-color: rgba(54, 63, 85, 0.5);
   }
 }
 
 .arrowsNext {
+
   img {
     transform: rotate(180deg);
   }
@@ -169,12 +186,13 @@
 
 .arrowsDisabled {
   background-color: rgba(54, 63, 85, 0.15);
+
   &:active {
     background-color: rgba(54, 63, 85, 0.15);
   }
 }
 
-.btnEdit{
+.btnEdit {
   width: 14px;
   height: 14px;
   padding: 0;
@@ -184,7 +202,7 @@
   outline: none;
 }
 
-.btnDelete{
+.btnDelete {
   width: 11px;
   height: 14px;
   padding: 0;
@@ -194,7 +212,7 @@
   outline: none;
 }
 
-.buttonClose{
+.buttonClose {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -206,6 +224,6 @@
   cursor: pointer;
 }
 
-.full{
+.full {
   width: 100%;
 }

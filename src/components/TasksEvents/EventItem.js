@@ -13,18 +13,18 @@ class EventItem extends Component {
     const { title, text, date, info } = this.props;
     return (
       <TaskItemWrapper>
-        <div className={styles.ItemHeader}>
-          <h3 className={styles.ItemTitle}>{title}</h3>
-          <div className={styles.ItemHeaderControl}>
+        <div className={styles.itemHeader}>
+          <h3 className={styles.itemTitle}>{title}</h3>
+          <div className={styles.itemHeaderControl}>
             <ButtonEdit />
             <ButtonDelete />
           </div>
         </div>
-        <p className={styles.ItemDate}>{date}</p>
-        <p className={styles.ItemText}>{text}</p>
-        <div className={styles.ItemInfo}>
-          <p>{info}</p>
-          <div className={styles.EventItemUsers}>
+        <p className={styles.itemDate}>{date}</p>
+        <p className={styles.itemText}>{text}</p>
+        <div className={styles.itemInfo}>
+          <p className={styles.eventInfo}>{info}</p>
+          <div className={styles.eventItemUsers}>
             <AvatarIcon src={Photo1} width={23} height={23} />
             <AvatarIcon src={Photo2} width={23} height={23} />
             <AvatarIcon src={Photo3} width={23} height={23} />

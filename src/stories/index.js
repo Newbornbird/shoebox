@@ -23,12 +23,19 @@ import AvatarIcon from '../components/Avatar/AvatarIcon';
 import Name from '../components/Avatar/Name';
 import Position from '../components/Avatar/Position';
 import Status from '../components/Status/Status';
+import StatusFilter from '../components/StatusFilter/StatusFilter';
 import Input from '../components/Form/Input/Input';
 import Textarea from '../components/Form/Textarea/TextArea';
 import Dropdown from '../components/Form/Dropdown/Dropdown';
 import TableAnalitics from '../components/TableAnalitics/TableAnalitics';
 import FormNewDeal from '../components/Form/FormNewDeal/FormNewDeal';
 import PageEmptyDeal from '../components/PageEmptyDeal/PageEmptyDeal';
+import Card from '../components/Card/Card';
+import BoxItem from '../components/Box/BoxItem';
+import BoxPage from '../components/Box/BoxPage';
+import BoxEmptyPage from '../components/Box/BoxEmptyPage';
+import FormNewCompany from '../components/Box/FormNewCompany';
+import FormNewContact from '../components/Box/FormNewContact';
 import './welcome';
 
 storiesOf('Logo', module).add('Logo', () => <Logo />);
@@ -66,7 +73,7 @@ storiesOf('Range', module)
 
 storiesOf('Checkbox', module).add('Checkbox', () => <Checkbox text="Added to campaign" />);
 
-storiesOf('Radio', module).add('Radio', () => <RadioBtn fieldYes="Yes" fieldNo="No" />);
+storiesOf('Radio', module).add('Radio', () => <RadioBtn name="yes" value="yes" />);
 
 storiesOf('Avatar', module)
   .add('Avatar', () => <Avatar />)
@@ -76,7 +83,8 @@ storiesOf('Avatar', module)
 
 storiesOf('Status', module)
   .add('Status', () => <Status />)
-  .add('Status active', () => <Status active />);
+  .add('Status active', () => <Status active />)
+  .add('StatusFilter', () => <StatusFilter text="Opened" sent />);
 
 storiesOf('Input', module).add('Input', () => <Input labelText="First Name" placeholder="For example" />);
 
@@ -89,3 +97,14 @@ storiesOf('Table', module).add('TableAnalitics', () => <TableAnalitics />);
 storiesOf('Form', module).add('FormNewDeal', () => <FormNewDeal />);
 
 storiesOf('Page', module).add('EmptyPageDeals', () => <PageEmptyDeal />);
+
+storiesOf('Card', module).add('Card', () => <Card />);
+
+storiesOf('Box', module)
+  .add('BoxItem', () => (
+    <BoxItem countCards={234} title="Hot prospects" subtitle="Contacts" user="Anant Jain" date="Jun 12, 2019" />
+  ))
+  .add('BoxPage', () => <BoxPage />)
+  .add('BoxEmptyPage', () => <BoxEmptyPage />)
+  .add('FormNewCompany', () => <FormNewCompany />)
+  .add('FormNewContact', () => <FormNewContact />);

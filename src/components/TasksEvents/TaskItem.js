@@ -9,15 +9,15 @@ class TaskItem extends Component {
     const { title, text, date } = this.props;
     return (
       <TaskItemWrapper>
-        <div className={styles.ItemHeader}>
-          <h3 className={styles.ItemTitle}>{title}</h3>
-          <div className={styles.ItemHeaderControl}>
+        <div className={styles.itemHeader}>
+          <h3 className={styles.itemTitle}>{title}</h3>
+          <div className={styles.itemHeaderControl}>
             <ButtonEdit />
             <ButtonDelete />
           </div>
         </div>
-        <p className={styles.ItemText}>{text}</p>
-        <p className={styles.ItemDate}>{date}</p>
+        <p className={styles.itemText}>{text}</p>
+        <p className={styles.itemDate}>{date}</p>
       </TaskItemWrapper>
     );
   }

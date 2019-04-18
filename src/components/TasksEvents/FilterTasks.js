@@ -5,7 +5,7 @@ import styles from './Tasks.module.scss'; // Import css modules stylesheet as st
 class FilterTasks extends Component {
   render() {
     return (
-      <div className={styles.FilterTasks}>
+      <div className={styles.filterTasks}>
         <Button transparentShadow text="All" />
         <Button transparentShadow text="Tasks" />
         <Button transparentShadow text="Events" />
