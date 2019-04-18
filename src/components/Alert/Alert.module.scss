@@ -1,0 +1,16 @@
+.alert{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #F5F6FA;
+  cursor: pointer;
+}
+.statusAlert{
+  position: absolute;
+  right: -4px;
+  top: -4px;
+}

@@ -1,0 +1,96 @@
+
+.filterTasks{
+  margin-top: 15px;
+  display: flex;
+   button{
+     margin-right: 5px;
+   }
+}
+
+.taskList{
+  padding-left: 0;
+  list-style-type: none;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.taskItemWrapper{
+  padding: 13px 17px 25px;
+  background-color: #ffffff;
+  margin-bottom: 15px;
+  box-shadow: 1px 1px 3px #E5E9F3;
+}
+
+.itemHeader{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.itemTitle{
+  font-size: 14px;
+  color: #363F55;
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.itemHeaderControl{
+  display: flex;
+  align-items: center;
+    button{
+      margin-left: 13px;
+    }
+}
+
+.itemText{
+  font-size: 14px;
+  font-weight: normal;
+  color: #363F55;
+  margin-top: 0;
+  margin-bottom: 7px;
+  overflow: hidden;
+  width: 95%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.itemDate{
+  font-size: 12px;
+  color: #C6CBD6;
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.itemInfo{
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #C6CBD6;
+  margin-top: 0;
+  margin-bottom: 11px;
+}
+
+.eventItemUsers{
+  display: flex;
+  align-items: center;
+   a{
+     margin-right: -5px;
+     position: relative;
+     &:first-child{
+       z-index: 15;
+     }
+     &:nth-child(2){
+      z-index: 10;
+     }
+   }
+}
+
+.eventInfo {
+  width: 300px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

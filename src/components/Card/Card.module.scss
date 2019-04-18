@@ -1,0 +1,28 @@
+.cardContainer{
+  max-width: 1200px;
+  margin: 80px auto 40px auto;
+}
+
+.card{
+  position: relative;
+  width: 100%;
+  min-height: 420px;
+  border: 2px dotted #E5E9F3;
+  background: #F5F6FA;
+  &::before{
+    position: absolute;
+    left: -2px;
+    top: -52px;
+    content: '';
+    display: block;
+    width: 176px;
+    height: 56px;
+    background-image: url('../../assets/images/title-empty-card.png');
+    background-repeat: no-repeat;
+    background-size: cover
+    // border-bottom: 50px solid #F5F6FA;
+    // border-right: 30px solid transparent;
+    // border-left: 2px dotted #E5E9F3;
+    // border-top: 2px dotted #E5E9F3;
+  }
+}
